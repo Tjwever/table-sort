@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>
+            Using Fetch request and displaying user data without a frontend
+            library
+        </h2>
+        <h3>
+            Table is dynamically made with JS. And has the ability to sort.
+            Huzzah!
+        </h3>
+
+        <hr />
+
+        <br />
+
+        <!-- Table to display fetched user data -->
+        <!-- added class of 'table-sort' and the sorting automagically works -->
+        <!-- let li = `<tr><th>ID</th><th>Name</th><th>User Name</th><th>Email</th> <th>Phone</th><th>Website</th></tr>` -->
+
+        <table class="table-sort">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>User Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody id="users">
+
+            </tbody>
+        </table>
+
+        <br />
+
+        <hr />
+
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/table-sort-js/table-sort.js"></script>
+    </body>
+</html>
